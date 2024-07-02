@@ -1,0 +1,109 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #5693CA;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.live-radio-button {
+    background-color: #336666;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.live-radio-button:hover {
+    background-color: #2a5555;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+main {
+    padding: 6em 2em 2em 2em; /* Adiciona espaço para o header fixo */
+}
+
+.news {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.news h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.news-item {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    font-size: 1.5em;
+    color: #5693CA;
+    margin-bottom: 0.5em;
+}
+
+.news-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}

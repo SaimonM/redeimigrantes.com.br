@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Rede Imigrantes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section class="news">
+            <h2>Notícias</h2>
+            <div class="news-item" data-category="esportes">
+                <h3>Esportes</h3>
+                <p>Notícia de esportes aqui...</p>
+            </div>
+            <div class="news-item" data-category="entreterimento">
+                <h3>Entreterimento</h3>
+                <p>Notícia de entreterimento aqui...</p>
+            </div>
+            <div class="news-item" data-category="jornalismo">
+                <h3>Jornalismo</h3>
+                <p>Notícia de jornalismo aqui...</p>
+            </div>
+            <div class="news-item" data-category="economia">
+                <h3>Economia</h3>
+                <p>Notícia de economia aqui...</p>
+            </div>
+            <div class="news-item" data-category="agenda de jogos">
+                <h3>Agenda de Jogos</h3>
+                <p>Notícia de agenda de jogos aqui...</p>
+            </div>
+            <!-- Adicione mais notícias conforme necessário -->
+        </section>
+    </main>
+    <div id="footer-container"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("header.html");
+        });
+    </script>
+    <script>
+        $(function(){
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

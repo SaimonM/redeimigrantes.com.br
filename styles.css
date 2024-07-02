@@ -1,0 +1,382 @@
+/* Define a fonte padrão, margens, padding, cor de fundo e comportamento de rolagem suave para o corpo */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte padrão como Montserrat */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #5693CA; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 1em 0; /* Espaçamento interno vertical */
+    text-align: center; /* Alinha o texto ao centro */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    width: 100%; /* Largura total */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Container do cabeçalho para alinhamento e espaçamento */
+.header-container {
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Espaça os itens */
+    width: 100%; /* Largura total */
+    max-width: 1200px; /* Largura máxima */
+    padding: 0 20px; /* Espaçamento interno horizontal */
+}
+
+/* Estiliza a logo */
+.logo {
+    height: 65px; /* Altura da logo */
+    width: auto; /* Largura automática */
+    margin-right: auto; /* Margem direita automática para empurrar outros elementos */
+}
+
+/* Estiliza a lista de navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Usa flexbox para layout */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+/* Estiliza os itens da lista de navegação */
+nav ul li {
+    margin: 0 15px; /* Margem horizontal entre os itens */
+}
+
+/* Estiliza os links da navegação */
+nav ul li a {
+    color: white; /* Cor do texto branca */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza o botão de rádio ao vivo */
+.live-radio-button {
+    background-color: #336666; /* Cor de fundo verde-escura */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+/* Efeito de hover no botão de rádio ao vivo */
+.live-radio-button:hover {
+    background-color: #2a5555; /* Cor de fundo mais escura */
+    transform: scale(1.05); /* Aumenta o botão em 5% */
+    transition: transform 0.3s ease-in-out; /* Animação de transição suave */
+}
+
+/* Define o padding para o main, considerando o cabeçalho fixo */
+main {
+    padding: 6em 2em 2em 2em; /* Espaçamento interno com espaço para o cabeçalho fixo */
+}
+
+/* Estiliza a seção do carrossel */
+.carousel {
+    margin: 2em 0; /* Margem vertical */
+    position: relative; /* Posicionamento relativo */
+    width: 100%; /* Largura total */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa a borda */
+}
+
+/* Estiliza os slides do carrossel */
+.slick-carousel .carousel-slide {
+    position: relative; /* Posicionamento relativo */
+    width: 100%; /* Largura total */
+}
+
+/* Estiliza as imagens do carrossel */
+.slick-carousel img {
+    width: 100%; /* Largura total */
+    height: auto; /* Altura automática */
+    max-height: calc(100vh - 200px); /* Limita a altura máxima */
+    border-radius: 30px; /* Bordas arredondadas */
+}
+
+/* Estiliza as legendas do carrossel */
+.carousel-caption {
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Alinha no meio verticalmente */
+    left: 50%; /* Alinha no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a legenda */
+    color: white; /* Cor do texto branca */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 80%; /* Largura de 80% */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 1em; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estiliza os títulos das legendas do carrossel */
+.carousel-caption h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin: 0 0 0.5em 0; /* Margem inferior */
+}
+
+/* Estiliza os parágrafos das legendas do carrossel */
+.carousel-caption p {
+    margin: 0.5em 0; /* Margem vertical */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+/* Estiliza a seção de história */
+.history {
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 2em 0; /* Margem vertical */
+}
+
+/* Estiliza o título da seção de história */
+.history h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 0.5em; /* Margem inferior */
+}
+
+/* Estiliza os parágrafos da seção de história */
+.history p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Margem automática */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estiliza a seção da equipe */
+.team {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza o título da seção da equipe */
+.team h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 1em; /* Margem inferior */
+}
+
+/* Estiliza cada membro da equipe */
+.team-member {
+    display: inline-block; /* Exibe em linha */
+    width: 200px; /* Largura */
+    margin: 1em; /* Margem */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza as imagens dos membros da equipe */
+.team-member img {
+    width: 150px; /* Largura */
+    height: 150px; /* Altura */
+    border-radius: 50%; /* Bordas arredondadas */
+    display: block; /* Exibe como bloco */
+    margin: 0 auto 10px; /* Margem automática e inferior */
+}
+
+/* Estiliza os títulos dos membros da equipe */
+.team-member h3 {
+    margin: 0.5em 0 0.2em 0; /* Margem */
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+/* Estiliza os links dos títulos dos membros da equipe */
+.team-member h3 a {
+    color: #5693CA; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Efeito de hover nos links dos títulos dos membros da equipe */
+.team-member h3 a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Estiliza os cargos dos membros da equipe */
+.team-member p {
+    margin: 0; /* Remove a margem */
+    font-size: 1em; /* Tamanho da fonte */
+    color: #555; /* Cor do texto */
+}
+
+/* Estiliza a seção de perfil do colaborador */
+.collaborator-profile {
+    display: flex; /* Usa flexbox para layout */
+    align-items: flex-start; /* Alinha ao início */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estiliza a imagem do perfil do colaborador */
+.profile-image {
+    width: 500px; /* Largura */
+    height: 600px; /* Altura */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+/* Estiliza os detalhes do perfil do colaborador */
+.profile-details {
+    max-width: 600px;
+}
+
+.profile-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.profile-details h2 {
+    font-size: 1.5em;
+    color: #5693CA;
+    margin-bottom: 1em;
+}
+
+.profile-details h3 {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+}
+
+.profile-details p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .collaborator-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-details {
+        max-width: 100%;
+    }
+}
+
+.live-radio-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #336666;
+    color: white;
+    display: none; /* Inicialmente escondida */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.live-radio-bar audio {
+    flex-grow: 1;
+}
+
+#close-player {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #1A5082; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto no rodapé */
+    padding: 20px 0; /* Adiciona padding vertical de 20px no topo e na base, sem padding horizontal */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    position: relative; /* Define a posição relativa do rodapé para posicionamento em relação aos elementos internos */
+    width: 100%; /* Garante que o rodapé ocupe 100% da largura do container pai */
+    bottom: 0; /* Posiciona o rodapé na parte inferior do seu container pai */
+}
+
+/* Estiliza o container interno do rodapé */
+.footer-container {
+    max-width: 1200px; /* Define a largura máxima do container interno para 1200px */
+    margin: 0 auto; /* Centraliza o container no meio da página horizontalmente */
+    display: flex; /* Utiliza Flexbox para um layout flexível dos elementos internos */
+    justify-content: space-between; /* Distribui o espaço entre os elementos dentro do container */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 0 20px; /* Adiciona padding horizontal de 20px nos lados, sem padding vertical */
+}
+
+/* Estiliza a lista de navegação dentro do rodapé */
+footer nav ul {
+    display: flex; /* Utiliza Flexbox para um layout flexível dos itens da lista */
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove todo o padding da lista */
+    margin: 0; /* Remove todas as margens da lista */
+}
+
+/* Estiliza os itens da lista dentro da navegação do rodapé */
+footer nav ul li {
+    margin: 0 15px; /* Adiciona margem horizontal de 15px entre os itens da lista */
+}
+
+/* Estiliza os links dentro dos itens da lista do rodapé */
+footer nav ul li a {
+    color: white; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Torna o texto do link em negrito */
+    font-size: 1em; /* Define o tamanho do texto dos links como 1em (o tamanho base da fonte do elemento pai) */
+}
+
+/* Adiciona um estilo de hover aos links do rodapé */
+footer nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao texto do link quando passa o mouse sobre ele */
+}
+
+
+#scroll-to-top {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 60px;
+}
+
+@media (max-width: 768px) {
+    /* Aplica estilos quando a largura da tela é de 768px ou menos, ideal para dispositivos móveis */
+    
+    .header-container {
+        flex-direction: column; /* Empilha os elementos verticalmente no container do cabeçalho */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda a direção dos itens da lista para vertical no menu de navegação */
+        align-items: center; /* Centraliza os itens da lista horizontalmente */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adiciona uma margem vertical para espaçar os itens da lista, sem margem horizontal */
+    }
+}
